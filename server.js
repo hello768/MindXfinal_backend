@@ -14,5 +14,4 @@ const PORT = 3000;
 App.listen(PORT,()=>{
     console.log(`App is running on port ${PORT}`);
 })
-module.exports = app;
 export default App;
