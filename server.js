@@ -10,8 +10,9 @@ App.use(express.json());
 
 AppRoute(App);
 
-const PORT = 3000;
-App.listen(PORT,()=>{
+const PORT = process.env.PORT || 3000;
+
+App.listen(PORT, () => {
     console.log(`App is running on port ${PORT}`);
-})
+});
 export default App;
